@@ -1,0 +1,113 @@
+/* 🔷 Container Styling */
+.popular-carousel-container {
+  background: linear-gradient(rgba(6, 32, 43, 0.85), rgba(6, 32, 43, 0.85)),
+              url("/public/popularissuebg.png") no-repeat center center/cover;
+  padding: 3rem 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+/* 🔷 Section Title */
+.popular-carousel-container h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #7AE2CF;
+  margin-top:2rem;
+  margin-bottom: 2rem;
+}
+
+.popular-carousel-container h3::after {
+  content: " Issues";
+  color: #ffffff;
+}
+
+/* 🔷 Horizontal Scroll Area */
+.carousel-scroll {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+.carousel-scroll::-webkit-scrollbar-thumb {
+  background: #7AE2CF;
+  border-radius: 10px;
+}
+
+/* 🔷 Card Design */
+.popular-issue-card {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 1.5rem;
+  min-width: 280px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.popular-issue-card:hover {
+  transform: translateY(-4px);
+}
+
+/* 🔷 Card Title */
+.popular-issue-card h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #7AE2CF;
+  margin-bottom: 0.75rem;
+}
+
+/* 🔷 Description */
+.issue-desc {
+  font-size: 0.95rem;
+  color: #e0e0e0;
+  margin-bottom: 1.2rem;
+}
+
+/* 🔷 Vote + Comment + Status Row */
+.vote-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.vote-stats span {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color:#7AE2CF;
+}
+
+/* 🔷 Status Tags */
+.status {
+  background: #ffc107;
+  color: #06202B;
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 1rem;
+  white-space: nowrap;
+}
+
+.status.open {
+  background-color: #f70d1a;
+  color:#fff;
+}
+
+.status.in-progress {
+  background-color: #ffc107;
+  color: #06202B;
+}
+
+.status.resolved {
+  background-color: #28a745;
+  color: #fff;
+}

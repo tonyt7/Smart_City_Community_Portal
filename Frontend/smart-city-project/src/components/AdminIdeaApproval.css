@@ -1,0 +1,100 @@
+.admin-approval-container {
+  padding: 20px;
+}
+
+.approval-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.approval-table th,
+.approval-table td {
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  text-align: left;
+
+}
+
+.approval-table th {
+  background-color: #f0f1f4;
+  color: #06202B;
+  font-weight: bold;
+}
+.capsule {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: white;
+  background-color: #009990;
+  white-space: nowrap;
+}
+
+.capsule.date {
+  background-color: #06202B;
+}
+
+.capsule.user {
+  background-color: #3d3e41;
+}
+
+
+/* Approval Buttons */
+.approval-table button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'Nova Round', serif;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+/* Approve Button */
+.approval-table button:first-child {
+  background-color: #28a745;
+  color: white;
+  margin-right: 8px;
+}
+
+.approval-table button:first-child:hover {
+  background-color: #218838;
+}
+
+/* Reject Button */
+.reject-button {
+  background-color: #dc3545;
+  color: white;
+  margin-top: 6px;
+}
+
+.reject-button:hover {
+  background-color: #c82333;
+}
+
+/* Confirm Reject Button */
+.confirm-reject-button {
+  background-color: #c82333;
+  color: white;
+  margin-top: 6px;
+  margin-left: 4px;
+}
+
+.confirm-reject-button:hover {
+  background-color: #23272b;
+}
+
+/* Rejection Input */
+.rejection-input {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  width: 200px;
+  margin-top: 6px;
+  margin-right: 5px;
+  font-family: 'Nova Round', serif;
+}
+

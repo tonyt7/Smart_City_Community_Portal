@@ -1,0 +1,135 @@
+/* Import slick styles */
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.issues-carousel-container {
+  background: url('/public/skybackg.jpeg') no-repeat center center/cover;
+  position: relative;
+  padding: 2rem 1rem;
+  color: #fff;
+}
+
+
+/* Overlay */
+.issues-carousel-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(122, 226, 206, 0.5); /* semi-transparent green-blue */
+  z-index: 0;
+  border-radius: 8px;
+}
+
+.issues-carousel-container h3 {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  margin-top :1rem;
+  color: #ffffff;
+}
+
+.issues-carousel-container h3::after {
+  content: " Issues";
+  color: #06202B;
+}
+
+.slide-wrapper {
+  padding: 0 0.75rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* Ensure dots appear above overlay */
+
+.slick-dots {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  z-index: 10;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.slick-dots li {
+  margin: 0 6px;
+}
+
+.custom-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #06202B;
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+.slick-dots li.slick-active .custom-dot {
+  opacity: 1;
+}
+.issue-description{
+ color: #009990;
+}
+/* Issue card */
+.issue-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  color: #06202B;
+  display: flex;
+  z-index:2;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  width: 280px;     /* ✅ fixed width */
+  height: 400px;    /* ✅ fixed height */
+ }
+
+.issue-card:hover {
+  transform: translateY(-4px);
+}
+
+.issue-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.issue-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.issue-content h4 {
+  font-size: 1.1rem;
+  color: #06202B;
+  margin: 0;
+}
+
+.issue-date {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  width:30%;
+  text-align:center;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+.status-open { background: #fca5a5; color: #7f1d1d; }
+.status-in-review { background: #fcd34d; color: #78350f; }
+.status-resolved { background: #86efac; color: #14532d; }
+

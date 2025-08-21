@@ -1,0 +1,85 @@
+.issue-status-manager {
+  padding: 2rem;
+  border-radius: 12px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f7fa; /* soft light gray-blue */
+}
+
+.issue-status-manager h2 {
+  font-size: 1.8rem;
+  color: #06202B;
+  margin-bottom: 1.5rem;
+}
+
+.status-pill {
+  display: inline-block;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+.status-table {
+  width: 100%;
+  border-collapse: separate;
+  backdrop-filter: blur(50px);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.status-table th,
+.status-table td {
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 1px solid #7AE2CF;
+}
+
+.status-table th {
+  color: #7AE2CF;
+  background-color: rgba(6, 32, 43, 0.8);
+  border: 1px solid #3d3e41;
+  text-align:center;
+}
+
+.status-table td select,
+.status-table td input {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: none;
+  background:#3d3e41;
+  color:#fff;
+  text-align:center;
+  font-size: 0.9rem;
+}
+
+.status-table td input {
+  background:#3d3e41;
+  color: #fff;
+}
+
+.status-table td select {
+  background: #f0f0f0;
+  color: #06202B;
+}
+
+.update-status-btn {
+  background: #7AE2CF;
+  color: #06202B;
+  font-weight: bold;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.update-status-btn:hover {
+  background: #62d6bd;
+}

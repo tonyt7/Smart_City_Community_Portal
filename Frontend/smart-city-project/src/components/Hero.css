@@ -1,0 +1,76 @@
+.hero-section {
+    
+    color: white;
+    height: 50vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin:auto;
+
+  }
+
+.hero-content {
+    text-align: center;
+    margin: auto 0;
+    padding: 250px 0px;
+  }
+  
+  .highlight{
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .hero-title  {
+    font-size: 3.0rem;
+    font-family: "Nova Round", serif;
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: 20px;
+    }
+  
+  
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 25px;
+  }
+  
+  .hero-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Space between text and icon */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-button.report-issue {
+    background-color: rgba(123, 4, 4, 0.633);
+    font-family: "Nova Round", serif;
+    font-weight: 400;
+    color:#f4e9e6;
+    font-style: normal/* Orange color for "Report an Issue" */
+  }
+  
+  .hero-button.report-issue:hover {
+    background-color: #ffffff;
+    color:#009990; /* Darker orange on hover */
+  }
+  
+  .hero-button.submit-idea{
+    background-color: rgb(1, 54, 1);
+    font-family: "Nova Round", serif;
+    color:#f4e9e6;
+    font-weight: 400;
+    font-style: normal /* Teal color for "Submit an Idea" */
+  }
+  
+  .hero-button:hover {
+    background-color: #ffffff;
+    color:#009990; /* Lighter teal on hover */
+  }
+  

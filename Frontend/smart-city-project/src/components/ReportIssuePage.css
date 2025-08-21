@@ -1,0 +1,260 @@
+  .report-issue-page{
+    background-color: #7AE2CF;
+  }
+  .report-header{
+    background-color: #009990;
+    filter: drop-shadow(4px 4px 10px #7AE2CF);
+    padding: 2% 10% ;
+    color: #333;
+    position: relative; /* Add this */
+    z-index: 1;
+    overflow: visible;
+  }
+
+  .h2-icon span{
+    font-size: 60px;
+    margin-right: 0.5rem;
+    color: #fff;
+    margin-bottom:0;
+    vertical-align: bottom;
+    
+  }
+
+  .location-button span{
+    font-size: 30px;
+    margin-right: 0.5rem;
+    margin-bottom: 0;
+    color: #fff;
+  }
+   .issue-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+  .issue-tags .material-symbols-rounded{
+    color:#009990;
+    font-size: 20px;
+    margin:0;
+  }
+  
+  .issue-tags span {
+    background-color: #fff;
+    color: #009990;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 1rem;
+  }
+  
+  .report-header h2{
+    font-family: 'Segoe UI', sans-serif;
+    color: #f0f1f4;
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .report-header p{
+    font-family: 'Segoe UI', sans-serif;
+    color: #f0f1f4;
+    font-size: 1rem; 
+    padding-top: 15px;
+    margin: 0;
+  }
+
+  .location-search {
+    display: flex;
+    max-width: 500px;
+    margin: 20px 0;
+  }
+  
+  .postcode-input {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 2px solid #06202B;
+    border-top-left-radius: 40px 80px;
+    border-bottom-left-radius:40px 80px;
+    outline: none;
+  }
+  .postcode-input:focus{
+    border: 2px solid #7AE2CF;
+    outline: none;
+  }
+  
+  .go-button {
+    background-color: #06202B;
+    color: #f0f1f4;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  .go-button:hover {
+
+    background-color: #3d3e41;
+    color: #ffffff;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-size: 1rem;
+
+  }
+
+  .location-button {
+
+    font-family: "Nova Round", serif;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color:#fff;
+    padding: 6px 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .location-button:hover {
+
+    font-family: "Nova Round", serif;
+    background-color: #06202B;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 6px 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+  }
+
+
+  .map-placeholder {
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    color: #fff;
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    font-family: "Nova Round", serif;
+    font-size: 1.5rem;
+  }
+
+  .leaflet-container{
+    height: 100vh;
+    background-color:#ffffff;
+  }
+
+  .report-issue-layout {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .sidebar {
+    background: #7AE2CF;
+    color: #06202B;
+    padding: 20px;
+    border: 4px solid #06202B;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .report-button {
+    background-color: #7AE2CF;
+    color: #06202B;
+    font-family: "Nova Round", serif;
+    font-size: 1.2rem;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .report-button:hover {
+    background-color: #fff; 
+    color: #009990;
+    
+  }
+  
+  .filters select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .checkbox {
+    font-size: 0.9rem;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+  
+  .report-list {
+    flex-grow: 1;
+  }
+  
+  .report-item {
+    background: #f9f9f9;
+    padding: 10px;
+    border-left: 4px solid gold;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+  }
+  
+  .map-section {
+    flex: 1;
+    position: relative;
+  }
+  
+  .map-section .leaflet-container {
+    height: 100%;
+    width: 100%;
+  }
+  .side-tools {
+    position: relative;
+  }
+  
+  /* Blurred and grayscale background when user not logged in */
+  .side-tools.blurred > *:not(.blur-overlay) {
+    filter: blur(5px) grayscale(100%);
+    pointer-events: none;
+    user-select: none;
+  }
+  
+  /* Overlay message – NOT blurred */
+  .blur-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(6, 32, 43, 0.96); /* dark theme */
+    color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    z-index: 10;
+    text-align: center;
+    width: 80%;
+    max-width: 480px;
+    font-family: "Nova Round", sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    filter: none; /* Ensure it's not blurred */
+  }
+  
+  
+
+  
+  
+  

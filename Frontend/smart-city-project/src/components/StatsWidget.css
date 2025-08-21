@@ -1,0 +1,37 @@
+.chart-sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;
+  height: 100%;
+  width: 200px;
+}
+
+.chart-btn {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #f0f1f4;
+  color: #06202B;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart-btn:hover {
+  background-color: #e0e3e9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.chart-btn.active {
+  background-color: #009990;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}

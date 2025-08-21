@@ -1,0 +1,157 @@
+.report-form-container {
+  background-color: #06202B;
+  padding: 2rem;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+}
+  
+.report-form-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #7AE2CF;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+  .report-form-container p {
+    margin-bottom: 30px;
+    color: #3d3e41;
+    font-size: 1rem;
+  }
+  
+  .report-form .form-group {
+    margin-bottom: 25px;
+  }
+  
+  .report-form label {
+    font-weight: 600;
+    color: #ffffff;
+  }
+  
+  .report-form input,
+  .report-form select,
+  .report-form textarea {
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .report-form input:focus,
+  .report-form select:focus,
+  .report-form textarea:focus {
+    border-color: #009990;
+    outline: none;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .form-row .form-group {
+    flex: 1;
+    min-width:250px;
+  }
+  
+  .report-form textarea {
+    resize: vertical;
+  }
+  
+  .map-locate-group {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .map-locate-group input {
+    flex: 1;
+  }
+  
+  .locate-btn {
+    background-color: #3d3e41;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  
+  .locate-btn:hover {
+    background-color: #f0f1f4;
+    color:#06202B;
+  }
+  
+  .submit-btn {
+    background-color: #7AE2CF;
+    color: #06202B;
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    align-self: flex-start;
+  }
+  
+  .submit-btn:hover {
+    background-color: #5fd8c0;
+  }
+  .form-group.photo-upload {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    color: #ffffff;
+  }
+  
+  .optional-text {
+    font-size: 0.85rem;
+    color: #7ae2cf;
+  }
+  
+  .photo-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: transparent;
+    padding: 0.25rem 0;
+  }
+  
+  .file-btn {
+    background-color: #3d3e41;
+    color: #06202B;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: background-color 0.2s ease;
+  }
+  
+  .file-btn:hover {
+    background-color: #f0f1f4;
+    color:#06202B;
+  }
+  
+  .file-input {
+    display: none;
+  }
+  
+  .file-name {
+    color: #ccc;
+    font-size: 0.95rem;
+  }
+  
+  .report-form-container .material-symbols-rounded{
+    color:#7AE2CF;
+    margin-bottom:0;
+  }

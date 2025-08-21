@@ -1,0 +1,278 @@
+/* Header Container */
+
+.header-hero {
+  min-height: 700px; /* Ensures full height */
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header {
+  display: flex;
+  background: rgba(0, 0, 0, 0.2);
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: background 0.3s ease-in-out, padding 0.3s ease-in-out;
+  z-index: 1000;
+  
+}
+
+.header.sticky {
+  background: rgba(0, 0, 0, 0.85); /* Semi-transparent black */
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3); /* Floating effect */
+  backdrop-filter: blur(5px); /* Glassmorphism effect */
+}
+
+/* Logo */
+.logo img {
+  height: 100px;
+  padding-left: 20px;
+}
+
+/* Navigation Menu */
+.nav-menu {
+  display: flex;
+  gap: 30px; /* Add more spacing between menu items */
+}
+
+.nav-menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu li {
+  position: relative; /* Required for hover effects */
+}
+
+.nav-menu a {
+  color: white; /* Default text color */
+  text-decoration: none;
+  font-family: "Nova Round", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  padding: 8px 15px; /* Add padding for hover effects */
+  border-radius: 20px; /* Rounded edges */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.nav-menu a:hover {
+  color: #009990; /* Green text on hover */
+  background-color: #ffffff; /* White background on hover */
+  text-decoration: none;
+  border: 1px solid #3d3e41; /* Optional border for emphasis */
+}
+
+/* Auth Buttons: Login and Register */
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+  padding-right: 20px;
+}
+
+.login-button {
+  background-color: #f0f1f4;
+  font-family: "Nova Round", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #009990;
+  border: 1px solid #3d3e41;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-button:hover {
+  background-color: #009990;
+  color: #ffffff;
+}
+
+.register-button {
+  background-color: #009990;
+  font-family: "Nova Round", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  border: 1px solid #f4e9e6;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.register-button:hover {
+  background-color: #333333;
+}
+
+
+/* About Section */
+.about-section {
+  padding: 50px 20px;
+  background-color: #f4e9e6; /* Rose Pink background */
+  color: #3d3e41; /* Dark Black for text */
+  text-align: center;
+}
+
+.about-heading {
+  font-family: "Nova Round", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5rem;
+  color: #808b57; /* Olive Green heading */
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+/* Fancy Underline */
+.about-heading::after {
+  content: '';
+  display: block;
+  width: 100px; /* Adjust width of underline */
+  height: 4px; /* Thickness of underline */
+  background-color: #808b57; /* Olive Green underline */
+  margin: 10px auto 0;
+  border-radius: 2px; /* Rounded underline */
+}
+
+/* About Description */
+.about-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  font-family: 'Arial', sans-serif;
+  margin: 0 auto;
+  max-width: 800px;
+  color: #3d3e41; /* Dark Black text */
+}
+.auth-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* User profile container */
+.user-profile {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-right: 30px; 
+}
+
+/* Circular Avatar */
+.user-avatar {
+  width: 60px;  /* Fixed size */
+  height: 60px; /* Fixed size */
+  border-radius: 50%; /* Makes it circular */
+  object-fit: cover; /* Ensures the image fits well */
+  border: 2px solid #ccc; /* Optional border */
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Prevent avatar from moving on hover */
+.user-profile:hover .user-avatar {
+  transform: none;
+}
+
+/* Profile dropdown menu */
+.profile-menu {
+  position: absolute;
+  top: 55px; /* Adjusted so it doesn't move the avatar */
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index: 9999;
+  width: 180px;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Show menu when hovering */
+.user-profile:hover .profile-menu {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Dropdown menu items */
+.profile-menu p {
+  color:#3d3e41;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-left: 12px;
+}
+
+.profile-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.profile-menu ul li {
+  color:#3d3e41;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.4s;
+  font-size: 14px;
+}
+
+.profile-menu ul li:hover {
+  background: #f0f0f0;
+}
+
+.simple-header {
+  display: flex;
+  background: #06202B;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3); /* Floating effect */
+  overflow:visible;
+  }
+
+.simple-header .nav-menu {
+  display: flex;
+  gap: 30px; /* Add more spacing between menu items */
+}
+
+.simple-header .nav-menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.simple-header .nav-menu li {
+  position: relative; /* Required for hover effects */
+}
+
+.simple-header .nav-menu a {
+  color: white; /* Default text color */
+  text-decoration: none;
+  font-family: "Nova Round", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  padding: 8px 15px; /* Add padding for hover effects */
+  border-radius: 20px; /* Rounded edges */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.simple-header .nav-menu a:hover {
+  color: #009990; /* Green text on hover */
+  background-color: #ffffff; /* White background on hover */
+  text-decoration: none;
+  border: 1px solid #3d3e41; /* Optional border for emphasis */
+}

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded');
+
+.report-steps-banner {
+  background-color:#06202B;
+  padding: 2% 4%;;
+  text-align: center;
+  color: #06202B;
+}
+
+.report-steps-banner h2 {
+  font-size: 3rem;
+  color:white;
+  font-weight:700;
+  font:normal;
+  margin: 0.5rem auto 2rem auto;
+}
+
+.report-steps-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.report-step-card {
+  background: #009990;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 4px solid #fff;
+  width: 150px;
+  box-shadow: 0 4px 10px #fff;
+}
+
+.report-steps-container .step-icon {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.report-step-card h3 {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.report-step-card p {
+  color: #fff;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}

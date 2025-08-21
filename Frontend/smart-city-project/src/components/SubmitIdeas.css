@@ -1,0 +1,71 @@
+/* Submit Ideas Section */
+.submit-ideas-section {
+    position: relative;
+    background-size: cover;
+    background-position: bottom;
+    height: 400px; /* Adjust height based on your needs */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Shadow drop */
+    width: 100%;
+  }
+  
+  /* Text Overlay Content */
+  .submit-ideas-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Make sure the overlay spans the full width */
+    height: 100%; /* Ensure the overlay height is the same as the background image */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(61, 62, 65, 0.6); /* Semi-transparent dark background overlay */
+    color: #f0f1f4; /* Light white text */
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+  }
+    
+  /* Heading */
+  .submit-ideas-heading {
+    font-family: "Nova Round", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem; /* Adjusted for prominence */
+    margin-bottom: 15px;
+    color: #f0f1f4; /* Light white text */
+  }
+  
+  /* Description */
+  .submit-ideas-description {
+    font-family: "Nova Round", serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #f0f1f4; /* Light white text */
+    max-width: 800px; /* Limit text width for readability */
+  }
+  
+  /* Button */
+  .submit-ideas-button {
+    font-family: "Nova Round", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 12px 24px;
+    font-size: 1rem;
+    color: #009990;
+    background-color: #ffffff; /* Rose Pink */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .submit-ideas-button:hover {
+    background-color: #009990; /* light white */
+    transform: scale(1.05);
+    color: #ffffff;
+  }
+
+  

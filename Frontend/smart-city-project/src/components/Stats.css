@@ -1,0 +1,96 @@
+
+.dashboard-wrapper {
+  padding: 2rem;
+  background-color: #f0f1f4;
+  border-radius: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #06202B;
+}
+
+/* Summary Cards */
+.summary-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.summary-card {
+  background-color: #7AE2CF;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  flex: 1;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.summary-card:hover {
+  transform: translateY(-4px);
+}
+
+.summary-label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.summary-value {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Donut Charts */
+.donut-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.donut-chart {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #06202B;
+}
+
+/* Recent Activity Feed */
+.recent-activity {
+  background-color: #ffffff;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.recent-activity h4 {
+  margin-bottom: 0.75rem;
+  color: #009990;
+}
+
+.recent-activity ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recent-activity li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.95rem;
+}
+
+.recent-activity li:last-child {
+  border-bottom: none;
+}

@@ -1,0 +1,125 @@
+.community-projects {
+    background-color: #ffffff; /* Light Purple Background */
+    padding: 50px 0;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .community-heading {
+    font-family: "Nova Round", serif;
+    font-size: 2.5rem;
+    color: #009990; /* Olive Green */
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .community-heading::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 4px;
+    background-color: #009990; /* Olive Green underline */
+    margin: 10px auto;
+    border-radius: 2px;
+  }
+
+  body {
+    overflow-x: hidden; /* Prevents extra margin issue */
+  }
+  
+  .slick-slider {
+    max-width: 100vw;
+    overflow: hidden;
+  }
+  /* Slick Carousel Adjustments */
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .slick-prev,
+  .slick-next {
+    color: #009990 !important; /* Olive Green */
+    z-index: 10;
+  }
+  
+  .slick-prev:hover,
+  .slick-next:hover {
+    color: #3d3e41 !important; /* Dark Black */
+  }
+  .project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    /* Make sure it's not blocking content */
+    z-index: 0
+  }
+  
+  /* Project Card Styling */
+  .project-card {
+    position: relative;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    background:rgba(0, 0, 0, 0.2) ;
+    background-size: cover;
+    background-position: center; /* Rose Pink */
+    border-radius: 50%; /* Makes it circular */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  .project-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Dark overlay for visibility */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; /* Ensure it's above the image */
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+   
+  .project-content h3 {
+    font-size: 1.2rem;
+    color: #ffffff; /* Dark Black */
+    font-family: "Nova Round", serif;
+    margin-top: 10px;
+  }
+  
+  .project-content p {
+    font-size: 0.9rem;
+    color: #ffffff;
+    font-family: "Nova Round", serif;
+    padding: 5px 10px;
+  }
+  
+  .view-more {
+    background-color: #009990; /* Olive Green */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .view-more:hover {
+    background-color: #3d3e41;  /* Dark Black */
+  }
+  

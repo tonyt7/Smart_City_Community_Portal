@@ -1,0 +1,110 @@
+/* Footer Container */
+.footer {
+    background-color: #3d3e41;
+    color: #f4e9e6;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 300px; /* Matches the inline height */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Flexbox Layout */
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+  
+  /* Footer Sections */
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+    padding: 10px;
+  }
+  
+  .footer-section h3 {
+    font-family: "Nova Round", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: solid underline 4px;;
+    text-decoration-color: #009990;
+  }
+  
+  /* Quick Links */
+  .quick-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .quick-links li {
+    margin-bottom: 8px;
+  }
+  
+  .quick-links a {
+    font-family: "Nova Round", serif;
+    color: #f4e9e6;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .quick-links a:hover {
+    color: #009990;
+  }
+  
+  /* Contact Info */
+  .contact-info p {
+    font-family: "Nova Round", serif;
+    margin: 8px 0;
+  }
+  
+  .contact-info i {
+    margin-right: 8px;
+    color: #ffffff;
+  }
+  
+  /* Social Media Icons */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    color: #f4e9e6;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #009990;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .social-icons {
+      justify-content: center;
+    }
+  }
+  

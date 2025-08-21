@@ -1,0 +1,120 @@
+.report-issues-panel {
+  padding: 2rem;
+  border-radius: 12px;
+  color: #06202B;
+  font-family: 'Segoe UI', sans-serif;
+  margin-bottom: 2rem;
+}
+
+.report-issues-panel h2 {
+  font-size: 1.8rem;
+  color: #06202B;
+  margin-bottom: 1.5rem;
+}
+
+.issues-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.issues-table td:first-child {
+  font-weight: 600;
+}
+.issues-table th,
+.issues-table td {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: left;
+}
+
+.issues-table th {
+  background-color: rgba(6, 32, 43, 0.8);
+  color: #7AE2CF;
+}
+
+.action-buttons button {
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.approve-btn {
+  background-color: #7AE2CF;
+  color: #06202B;
+}
+
+.reject-btn {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.approve-btn:hover {
+  background-color: #5cd4bb;
+}
+
+.reject-btn:hover {
+  background-color: #e84545;
+}
+.user-pill {
+  display: inline-block;
+  background-color: #e2e6ea;
+  color: #1f3d7a;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.date-pill {
+  background-color: #f1f5f9;
+  color: #374151;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: inline-block;
+}
+.reporter-avatar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.avatar-circle {
+  background-color: #1f3d7a;
+  color: white;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.reporter-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.location-pill {
+  display: inline-block;
+  background-color: #dbeafe;
+  color: #1e40af;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.location-pill i {
+  margin-right: 6px;
+}
+
+
