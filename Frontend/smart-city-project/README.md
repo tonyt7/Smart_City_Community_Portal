@@ -68,3 +68,34 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# Smart City Community Portal – Frontend
+
+This is the frontend application for the **Smart City Community Portal**, designed to empower communities through crowdsourced issue reporting, idea submission, and local engagement.
+
+## 🚀 Features
+
+- 🌐 **Interactive Map** for reporting city issues (e.g. potholes, broken lights)
+- 💡 **Submit Ideas** to improve the city
+- 🧵 **Public and Private Forums** with admin moderation
+- 📊 **User Dashboard** with personalized stats
+- 🔐 **Role-based Access** for users and admins
+- 📥 **Admin Panel** to approve content and manage users
+- 🧭 Geolocation support (Locate Me)
+- 🧠 Smart UI design with status filters, voting, and submission tracking
+
+## 🏗️ Tech Stack
+
+- **Framework**: React (latest version)
+- **State Management**: useState, useEffect, Context API
+- **Map**: Leaflet + React-Leaflet
+- **Styling**: CSS (custom, no Tailwind), responsive layout
+- **Icons**: Font Awesome
+- **Routing**: React Router
+- **API Integration**: Axios
+- **Authentication**: JWT-based (via backend)
+
+## 📁 Folder Structure
+
+
