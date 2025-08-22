@@ -6,7 +6,7 @@ This is the backend API for the **Smart City Community Portal**, supporting user
 
 ## 🚀 Features
 
-- ✅ **User Authentication** (JWT-based)
+- ✅ **User Authentication** 
 - 🧑‍💼 **Role-Based Access Control** (User/Admin)
 - 📌 **Issue Reporting** with status tracking and location support
 - 💡 **Idea Submission & Voting** with thresholds and review system
@@ -22,6 +22,6 @@ This is the backend API for the **Smart City Community Portal**, supporting user
 
 - **Server**: Node.js + Express
 - **Database**: MySQL (via `mysql2`)
-- **Authentication**: JWT + bcrypt
+- **Authentication**: JWT 
 - **File Uploads**: Multer
 - **Environment Management**: dotenv
